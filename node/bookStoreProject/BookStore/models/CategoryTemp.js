@@ -1,0 +1,14 @@
+'use strict';
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+
+var Book = require('../models/bookModel')
+var Category = require('../models/categoryModel')
+
+
+module.exports = function(router){
+    router.get('/', function(req, res)){
+        res.render('index');
+    }
+KKKRRLNJ
+    router.get('details/:id')
+}

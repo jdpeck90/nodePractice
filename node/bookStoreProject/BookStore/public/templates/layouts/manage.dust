@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<div class="row">
+    <div class="large-12 columns">
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <ul class="menu">
+                    <li><a href="/manage">Dashboard</a></li>
+                    <li><a href="/manage/books">Books</a></li>
+                    <li><a href="/manage/categories">Categories</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="large-12 colums">
+        {+body /}
+    </div>
+</div>
+
+<footer>
+    <div class="row">
+        <div class="large-12 columns">
+            <p>TekBooks & copy; 2016| <a href="/manage">Manage</a></p>
+        </div>
+    </div>
+</footer>

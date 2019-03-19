@@ -1,0 +1,22 @@
+{>"layouts/master" /}
+
+{<body}
+<div class="large-4 columns book">
+    <img src="/img/node1.jpg" />
+</div>
+<div class="large-4 columns book">
+    <h2>Professional Node.js</h2>
+    <ul class="bookInfo">
+        <li>Category: Node.js</li>
+        <li>Author John Doe</li>
+        <li>Publisher: Some Publisher</li>
+    </ul>
+    <br />
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vero quidem
+        maxime tenetur architecto hic iure ipsa blanditiis nihil culpa facere,
+        maiores, dolore dolorem magnam praesentium incidunt quos dicta
+        voluptate!
+    </p>
+</div>
+{/body}

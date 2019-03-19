@@ -1,0 +1,44 @@
+.top-bar {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.book {
+    text-align: center;
+}
+
+.book h4 {
+    margin-top: 15px;
+}
+
+.price {
+    margin: 5px;
+    font-size: 18px;
+}
+
+.price span {
+    color: green;
+    background: #f4f4f4;
+    padding: 10px;
+    border: 1px #ccc solid;
+    border-radius: 50%;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 10px;
+    text-align: center;
+}
+
+.large-12 {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.large-3 {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
