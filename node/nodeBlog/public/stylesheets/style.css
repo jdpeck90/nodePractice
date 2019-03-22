@@ -96,6 +96,10 @@ nav a:hover {
   text-decoration: none;
 }
 
+.post img {
+  width: 100%;
+}
+
 input,
 select,
 textarea {

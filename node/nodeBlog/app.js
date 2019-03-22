@@ -21,6 +21,10 @@ var app = express();
 
 app.locals.moment = require('moment');
 
+app.locals.trucateText = function(text, length) {
+  var truncatedText = text.substring(0, length);
+  return truncatedText;
+};
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -28,17 +32,17 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
-
-app.use(session({
-  secret: 'secret',
-  saveUninitialized: true,
-  resave: true
-}));
+app.use(
+  session({
+    secret: 'secret',
+    saveUninitialized: true,
+    resave: true
+  })
+);
 
 //Express Validator
 app.use(
@@ -60,7 +64,6 @@ app.use(
     }
   })
 );
-
 
 // Connect-Flash
 app.use(require('connect-flash')());
