@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My first Vue app</title>
+    <script src="https://unpkg.com/vue"></script>
+  </head>
+  <body>
+    <div id="app">
+      <!-- <p>{{message}}</p>
+    <input v-model="message">
+    </div> -->
+
+      <h1>Bitcoin Price Index</h1>
+      {{ info }}
+      <div v-for="currency in info" class="currency">
+        {{ currency.description }}
+        <span class="lighten" v-html="currency.symbol"></span
+        >{{ currency.rate_float | currencydecimal }}
+      </div>
+      <!-- <p>
+        {{ message }}
+      </p>
+      <button v-on:click="reverseMessage">Reverse Message</button> -->
+
+      <!-- <ol>
+        <li v-for="todo in todos">
+          {{ todo.text }}
+        </li>
+      </ol> -->
+
+      <!-- <span v-bind:title="message">
+        Hover your mouse over me for a few seconds to see my dunamically bound
+        title!
+      </span> -->
+    </div>
+
+    <script src="./script.js"></script>
+    <script scr="./node_modules/axios/dist/axios.js"></script>
+    <script scr="./node_modules/vue/dist/vue.js"></script>
+  </body>
+</html>
