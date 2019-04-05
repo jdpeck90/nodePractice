@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>{+title /}</title>
+        <link rel="stylesheet" type="text/css" href="/css/app.css" />
+        <link rel="stylesheet" type="text/css" href="/css/foundation.css" />
+    </head>
+    <body>
+        <div class="row">
+            <div class="large-12 column">
+                <h1>TekBooks</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-12 column">
+                <div class="top-bar">
+                    <div class="top-bar-left">
+                        <div class="menu">
+                            <li><a href="/manage">Home</a></li>
+                            <li><a href="/manage/books">About</a></li>
+                            <li><a href="/manage/categories">Car</a></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-12 column">
+                {+body /}
+            </div>
+        </div>
+
+        <footer>
+            <div class="row">
+                <div class="large-12 column">
+                    <p>Tekbooks &copy; 2016 <a href="/">FrontEnd </a></p>
+                </div>
+            </div>
+        </footer>
+
+        <script
+            data-main="/js/app"
+            src="/components/requirejs/require.js"
+        ></script>
+    </body>
+</html>
